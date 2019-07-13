@@ -3,19 +3,18 @@ import { shallow } from 'enzyme';
 import App from '../App';
 
 
-describe('First React component test with Enzyme', () => {
+describe('<App />', () => {
    it('renders without crashing', () => {
       shallow(<App />);
-    });
+    }, console.log(<App />, 'test'));
+
+   //  it('renders child component when passed in', () => {
+   //     const wrapper = shallow((
+   //     <App>
+   //       <div className="unique"/>
+   //     </App>
+   //     ))
+   //    expect(wrapper.contains(<div className="unique" />)).to.equal(true);
+   //  })
 });
 
-describe('Examining the syntax of Jest tests', () => {
-   
-  
-  it('sums numbers', () => {
-        
-  expect(1 + 2).toEqual(3);
-        
-  expect(2 + 2).toEqual(4);
-     });
-  });
